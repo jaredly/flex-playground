@@ -1,0 +1,36 @@
+<!doctype>
+<title>Playground</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.11.0/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.11.0/codemirror.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/4.11.0/mode/javascript/javascript.min.js"></script>
+<style>
+#browser div, #browser span {
+    /* background-color: rgba(255, 0, 0, .1); */
+    outline: 1px solid rgba(255, 0, 0, .3);
+
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+
+    border: 0 solid black;
+    margin: 0;
+    padding: 0;
+}
+#csslayout div, #csslayout span {
+    outline: 1px solid rgba(255, 0, 0, .3);
+    position: absolute;
+    box-sizing: border-box;
+    border: 0 solid black;
+}
+#csslayout > div {
+    position: relative;
+}
+</style>
+
+<body>
+<script src="node_modules/babel-core/browser.js"></script>
+<script src="build/index.js"></script>
